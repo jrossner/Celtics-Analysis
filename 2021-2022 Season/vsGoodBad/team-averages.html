@@ -16,7 +16,29 @@
       ch1 = document.getElementById('chart1')
       Plotly.newPlot(ch1,
                      [{
+                       name: 'Wins',
+                       type: 'bar',
+                       x: ['Winning Teams', 'Losing Teams'],
+                       y: [18,16],
+                       marker: {
+                         color: ['green', 'red']
+                       }
+                      },
+                      {
+                       name: 'Losses',
+                       type: 'bar',
+                       xaxis: 'x2',
+                       yaxis: 'y2',
+                       x: ['Winning Teams', 'Losing Teams'],
+                       y: [17,9],
+                       marker: {
+                         color: ['green', 'red']
+                       }
+                      },
+                      {
                        name: 'PPG Against',
+                       xaxis: 'x3',
+                       yaxis: 'y3',
                        type: 'bar',
                        x: ['Winning Teams', 'Losing Teams'],
                        y: [109,104],
@@ -26,8 +48,8 @@
                       },
                       {
                         name: 'OPPG',
-                        xaxis: 'x2',
-                        yaxis: 'y2',
+                        xaxis: 'x4',
+                        yaxis: 'y4',
                         marker: {
                          x: ['Winning Teams', 'Losing Teams'],
                          y: [110,96],
@@ -37,7 +59,7 @@
                      {
                       grid: {
                         rows: 1,
-                        columns: 2,
+                        columns: 4,
                         pattern: 'independent'
                       }
                      }
