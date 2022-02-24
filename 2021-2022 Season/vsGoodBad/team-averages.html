@@ -1,0 +1,47 @@
+<!doctype HTML>
+<html lang='en-US'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+  </head>
+  <body>
+    <h1 align="center">Celtics Team Averages by Strength of Opponent Faced (2021-2022)</h1>
+    <div align="center">Winning Teams defined as currently having a record of .500 or better, Losing Teams as less than .500</div>
+    <div id = 'chart1'></div>
+    <script>
+      
+      ch1 = document.getElementById('chart1')
+      Plotly.newPlot(ch1,
+                     [{
+                       name: 'PPG Against',
+                       type: 'bar',
+                       x: ['Winning Teams', 'Losing Teams'],
+                       y: [109,104],
+                       marker: {
+                         color: ['green', 'red']
+                       }
+                      },
+                      {
+                        name: 'OPPG',
+                        xaxis: 'x2',
+                        yaxis: 'y2',
+                        marker: {
+                         x: ['Winning Teams', 'Losing Teams'],
+                         y: [110,96],
+                         color: ['green', 'red']
+                       }
+                      }],
+                     {
+                      grid: {
+                        rows: 1,
+                        columns: 2,
+                        pattern: 'independent'
+                      }
+                     }
+                    )
+    </script>
+  </body>
+</html>
