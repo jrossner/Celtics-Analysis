@@ -6,20 +6,345 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+    <script src="https://unpkg.com/simple-statistics@7.7.0/dist/simple-statistics.min.js"></script>
   </head>
   <body>
     <h1 align="center">Celtics Team Averages by Strength of Opponent Faced (2021-2022)</h1>
     <div align="center">Winning Teams defined as currently having a record of .500 or better, Losing Teams as less than .500</div>
+    <div id = 'vsWin'></div>
+    <div id = 'vsLos'></div>
     <div id = 'chart1'></div>
     <script>
-      
+      teams = {
+        chi: 39/(39+21),
+        mia: 38/(38+21),
+        phi: 35/(35+23),
+        mil: 36/(36+24),
+        cle: 35/(35+24),
+        tor: 32/(32+25),
+        bkn: 31/(31+29),
+        cha: 29/(29+31),
+        atl: 28/(28+31),
+        was: 27/(27+31),
+        nyk: 25/(25+34),
+        ind: 20/(20+40),
+        det: 14/(14+45),
+        orl: 13/(13+47),
+        phx: 49/(49+10),
+        gsw: 43/(43+17),
+        mem: 41/(41+20),
+        uta: 36/(36+22),
+        dal: 35/(35+24),
+        den: 34/(34+25),
+        min: 32/(32+28),
+        lac: 30/(30+31),
+        lal: 27/(27+31),
+        por: 25/(25+35),
+        sas: 23/(23+36),
+        nop: 23/(23+36),
+        sac: 22/(22+39),
+        okc: 18/(18+41),
+        hou: 15/(15+43)
+      }
+
+      results = [
+        {opp: 'nyk',
+                  for: 134,
+                  ag: 138
+                 },
+        {opp: 'tor',
+                  for: 83,
+                  ag: 115
+                 },
+        {opp: 'hou',
+                  for: 107,
+                  ag: 97
+                 },
+        {opp: 'cha',
+                  for: 140,
+                  ag: 129
+                 },
+        {opp: 'was',
+                  for: 107,
+                  ag: 116
+                 },
+        {opp: 'was',
+                  for: 112,
+                  ag: 115
+                 },
+        {opp: 'chi',
+                  for: 114,
+                  ag: 128
+                 },
+        {opp: 'orl',
+                  for: 92,
+                  ag: 79
+                 },
+        {opp: 'mia',
+                  for: 95,
+                  ag: 78
+                 },
+        {opp: 'dal',
+                  for: 104,
+                  ag: 107
+                 },
+        {opp: 'tor',
+                  for: 104,
+                  ag: 88
+                 },
+        {opp: 'mil',
+                  for: 122,
+                  ag: 113
+                 },
+        {opp: 'cle',
+                  for: 89,
+                  ag: 91
+                 },
+        {opp: 'cle',
+                  for: 98,
+                  ag: 92
+                 },
+        {opp: 'atl',
+                  for: 99,
+                  ag: 110
+                 },
+        {opp: 'lal',
+                  for: 130,
+                  ag: 108
+                 },
+        {opp: 'okc',
+                  for: 111,
+                  ag: 105
+                 },
+        {opp: 'hou',
+                  for: 108,
+                  ag: 90
+                 },
+        {opp: 'bkn',
+                  for: 104,
+                  ag: 123
+                 },
+        {opp: 'sas',
+                  for: 88,
+                  ag: 96
+                 },
+        {opp: 'tor',
+                  for: 109,
+                  ag: 97
+                 },
+        {opp: 'phi',
+                  for: 88,
+                  ag: 87
+                 },
+        {opp: 'uta',
+                  for: 130,
+                  ag: 137
+                 },
+        {opp: 'por',
+                  for: 145,
+                  ag: 117
+                 },
+        {opp: 'lal',
+                  for: 102,
+                  ag: 117
+                 },
+        {opp: 'lac',
+                  for: 111,
+                  ag: 114
+                 },
+        {opp: 'phx',
+                  for: 90,
+                  ag: 111
+                 },
+        {opp: 'mil',
+                  for: 117,
+                  ag: 103
+                 },
+        {opp: 'gsw',
+                  for: 107,
+                  ag: 111
+                 },
+        {opp: 'nyk',
+                  for: 114,
+                  ag: 107
+                 },
+        {opp: 'phi',
+                  for: 103,
+                  ag: 108
+                 },
+        {opp: 'cle',
+                  for: 111,
+                  ag: 101
+                 },
+        {opp: 'mil',
+                  for: 113,
+                  ag: 117
+                 },
+        {opp: 'min',
+                  for: 103,
+                  ag: 108
+                 },
+        {opp: 'lac',
+                  for: 82,
+                  ag: 91
+                 },
+        {opp: 'phx',
+                  for: 123,
+                  ag: 108
+                 },
+        {opp: 'orl',
+                  for: 116,
+                  ag: 111
+                 },
+        {opp: 'sas',
+                  for: 97,
+                  ag: 99
+                 },
+        {opp: 'nyk',
+                  for: 105,
+                  ag: 108
+                 },
+        {opp: 'nyk',
+                  for: 99,
+                  ag: 75
+                 },
+        {opp: 'ind',
+                  for: 101,
+                  ag: 98
+                 },
+        {opp: 'ind',
+                  for: 119,
+                  ag: 100
+                 },
+        {opp: 'phi',
+                  for: 99,
+                  ag: 111
+                 },
+        {opp: 'chi',
+                  for: 114,
+                  ag: 112
+                 },
+        {opp: 'nop',
+                  for: 104,
+                  ag: 92
+                 },
+        {opp: 'cha',
+                  for: 102,
+                  ag: 111
+                 },
+        {opp: 'por',
+                  for: 105,
+                  ag: 109
+                 },
+        {opp: 'was',
+                  for: 116,
+                  ag: 87
+                 },
+        {opp: 'sac',
+                  for: 128,
+                  ag: 75
+                 },
+        {opp: 'atl',
+                  for: 92,
+                  ag: 108
+                 },
+        {opp: 'nop',
+                  for: 107,
+                  ag: 97
+                 },
+        {opp: 'mia',
+                  for: 122,
+                  ag: 92
+                 },
+        {opp: 'cha',
+                  for: 113,
+                  ag: 107
+                 },
+        {opp: 'det',
+                  for: 102,
+                  ag: 93
+                 },
+        {opp: 'orl',
+                  for: 116,
+                  ag: 83
+                 },
+        {opp: 'bkn',
+                  for: 126,
+                  ag: 91
+                 },
+        {opp: 'den',
+                  for: 108,
+                  ag: 102
+                 },
+        {opp: 'atl',
+                  for: 105,
+                  ag: 95
+                 },
+        {opp: 'phi',
+                  for: 135,
+                  ag: 87
+                 },
+        {opp: 'det',
+                  for: 111,
+                  ag: 112
+                 },
+        {opp: 'bkn',
+                  for: 129,
+                  ag: 106
+                 }
+      ]
+
+
+      vsWinners = [] // holds win/loss and ppg for and against for games vs winning teams
+      vsLosers =  []
+
+      results.forEach(res => {
+        if (teams[res.opp] >= 0.5) {
+          vsWinners.push(res)
+        } else {
+          vsLosers.push(res)
+        }
+      })
+
+      wRec = [] // 1 = win, 0 = loss vs winning team
+      wFor = [] // points for against winning team
+      wAg = [] // points allowed against winning team
+      vsWinners.forEach(ele => {
+        if (ele.for > ele.ag) {
+          wRec.push(1)
+        } else {
+          wRec.push(0)
+        }
+        wFor.push(ele.for)
+        wAg.push(ele.ag)
+      })
+
+      lRec = [] // 1 = win, 0 = loss vs losing team
+      lFor = [] // points for against losing team
+      lAg = [] // points allowed against losing team
+      vsLosers.forEach(ele => {
+        if (ele.for > ele.ag) {
+          lRec.push(1)
+        } else {
+          lRec.push(0)
+        }
+        lFor.push(ele.for)
+        lAg.push(ele.ag)
+      })
+
+      document.getElementById('vsWin').innerHTML = `Winning Pct vs Winning Teams: ${Math.round((ss.sum(wRec)/wRec.length)*1000,3)/1000}`
+      document.getElementById('vsLos').innerHTML = `Winning Pct vs Losing Teams: ${Math.round((ss.sum(lRec)/lRec.length)*1000,3)/1000}`
+
       ch1 = document.getElementById('chart1')
       Plotly.newPlot(ch1,
                      [{
                        name: 'Wins',
                        type: 'bar',
                        x: ['Winning Teams', 'Losing Teams'],
-                       y: [18,16],
+                       y: [
+                           wRec.reduce((a, b) => a + b, 0),
+                           lRec.reduce((a, b) => a + b, 0)
+                          ],
                        marker: {
                          color: ['green', 'red']
                        }
@@ -30,20 +355,26 @@
                        xaxis: 'x2',
                        yaxis: 'y2',
                        x: ['Winning Teams', 'Losing Teams'],
-                       y: [17,9],
+                       y: [
+                           wRec.length-wRec.reduce((a, b) => a + b, 0),
+                           lRec.length-lRec.reduce((a, b) => a + b, 0)
+                          ],
                        marker: {
-                         color: ['green', 'red']
+                         color: ['blue', 'yellow']
                        }
                       },
                       {
-                       name: 'PPG Against',
+                       name: 'PPG',
                        xaxis: 'x3',
                        yaxis: 'y3',
                        type: 'bar',
                        x: ['Winning Teams', 'Losing Teams'],
-                       y: [109,104],
+                       y: [
+                           ss.mean(wFor),
+                           ss.mean(lFor)
+                          ],
                        marker: {
-                         color: ['green', 'red']
+                         color: ['green', 'gold']
                        }
                       },
                       {
@@ -52,8 +383,11 @@
                         yaxis: 'y4',
                         marker: {
                          x: ['Winning Teams', 'Losing Teams'],
-                         y: [110,96],
-                         color: ['green', 'red']
+                         y: [
+                             ss.mean(wAg),
+                             ss.mean(lAg)
+                            ],
+                         color: ['pink', 'purple']
                        }
                       }],
                      {
