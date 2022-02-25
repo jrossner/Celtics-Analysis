@@ -11,8 +11,8 @@
   <body>
     <h1 align="center">Celtics Team Averages by Strength of Opponent Faced (2021-2022)</h1>
     <div align="center">Winning Teams defined as currently having a record of .500 or better, Losing Teams as less than .500</div>
-    <div id = 'vsWin'></div>
-    <div id = 'vsLos'></div>
+    <div align="center" id = 'vsWin'></div>
+    <div align="center" id = 'vsLos'></div>
     <div id = 'chart1'></div>
     <script>
       teams = {
@@ -374,19 +374,20 @@
                            ss.mean(lFor)
                           ],
                        marker: {
-                         color: ['green', 'gold']
+                         color: ['lightblue', 'gold']
                        }
                       },
                       {
                         name: 'OPPG',
+                        type: 'bar',
                         xaxis: 'x4',
                         yaxis: 'y4',
-                        marker: {
-                         x: ['Winning Teams', 'Losing Teams'],
-                         y: [
+                        x: ['Winning Teams', 'Losing Teams'],
+                        y: [
                              ss.mean(wAg),
                              ss.mean(lAg)
                             ],
+                        marker: {
                          color: ['pink', 'purple']
                        }
                       }],
