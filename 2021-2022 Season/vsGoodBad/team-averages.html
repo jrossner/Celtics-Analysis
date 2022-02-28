@@ -14,6 +14,8 @@
     <div align="center" id = 'vsWin'></div>
     <div align="center" id = 'vsLos'></div>
     <div id = 'chart1'></div>
+    <div id = 'chart2'></div>
+    <div id = 'chart3'></div>
     <script>
       teams = {
         chi: 39/(39+22),
@@ -404,6 +406,54 @@
                         rows: 1,
                         columns: 4,
                         pattern: 'independent'
+                      }
+                     }
+                    )
+      ch2 = document.getElementById('chart2')
+      Plotly.newPlot(ch2,
+                     [{
+                       name: 'In Wins',
+                       type: 'histogram',
+                       x: wFor,
+                       nbinsx: 20
+                     },
+                     {
+                       name: 'In Losses',
+                       type: 'histogram',
+                       x: lFor,
+                       xaxis: 'x2',
+                       nbinsx: 20
+                     }],
+                     {
+                      title: "Points Per Game For (in Wins vs Losses)",
+                      grid: {
+                        rows: 1,
+                        columns: 2,
+                        patterm: 'independent'
+                      }
+                     }
+                    )
+      ch3 = document.getElementById('chart3')
+      Plotly.newPlot(ch3,
+                     [{
+                       name: 'In Wins',
+                       type: 'histogram',
+                       x: wAg,
+                       nbinsx: 20
+                     },
+                     {
+                       name: 'In Losses',
+                       type: 'histogram',
+                       x: lAg,
+                       xaxis: 'x2',
+                       nbinsx: 20
+                     }],
+                     {
+                      title: "Points Per Game Allowed (in Wins vs Losses)",
+                      grid: {
+                        rows: 1,
+                        columns: 2,
+                        patterm: 'independent'
                       }
                      }
                     )
