@@ -19,36 +19,36 @@
     <script>
       teams = {
         // east
-        chi: 39/(39+26),
-        mia: 44/(44+22),
-        phi: 40/(40+24),
-        mil: 41/(41+25),
-        cle: 38/(38+27),
-        tor: 34/(34+30),
-        bkn: 33/(33+33),
-        cha: 32/(32+34),
-        atl: 31/(31+33),
-        was: 29/(29+34),
-        nyk: 27/(27+38),
-        ind: 22/(22+45),
-        det: 18/(18+47),
-        orl: 16/(16+50),
+        chi: {w: 41,l: 27},
+        mia: {w: 46,l: 24},
+        phi: {w: 41,l: 26},
+        mil: {w: 43,l: 26},
+        cle: {w: 39,l: 29},
+        tor: {w: 38,l: 30},
+        bkn: {w: 36,l: 33},
+        cha: {w: 34,l: 35},
+        atl: {w: 34,l: 34},
+        was: {w: 29,l: 38},
+        nyk: {w: 28,l: 40},
+        ind: {w: 23,l: 47},
+        det: {w: 18,l: 51},
+        orl: {w: 18,l: 52},
         // west
-        phx: 52/(52+13),
-        gsw: 44/(44+22),
-        mem: 45/(45+22),
-        uta: 40/(40+24),
-        dal: 40/(40+25),
-        den: 39/(39+26),
-        min: 37/(37+29),
-        lac: 34/(34+33),
-        lal: 28/(28+36),
-        por: 25/(25+39),
-        sas: 25/(25+40),
-        nop: 27/(27+38),
-        sac: 24/(24+43),
-        okc: 20/(20+45),
-        hou: 16/(16+49)
+        phx: {w: 55,l: 14},
+        gsw: {w: 47,l: 22},
+        mem: {w: 48,l: 22},
+        uta: {w: 42,l: 26},
+        dal: {w: 42,l: 26},
+        den: {w: 41,l: 28},
+        min: {w: 40,l: 30},
+        lac: {w: 36,l: 35},
+        lal: {w: 29,l: 39},
+        por: {w: 26,l: 41},
+        sas: {w: 26,l: 43},
+        nop: {w: 28,l: 41},
+        sac: {w: 25,l: 45},
+        okc: {w: 20,l: 48},
+        hou: {w: 17,l: 51}
       }
 
       results = [
@@ -335,7 +335,7 @@
       vsLosers =  []
 
       results.forEach(res => {
-        if (teams[res.opp] >= 0.5) {
+        if (teams[res.opp].w >= teams[res.opp].l) {
           vsWinners.push(res)
         } else {
           vsLosers.push(res)
