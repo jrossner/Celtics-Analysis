@@ -36,7 +36,6 @@ model.coef_
 model.intercept_
 model.classes_
 
-
 pred = model.predict(testX)
 mat = metrics.confusion_matrix(testY,pred)
 cm = metrics.ConfusionMatrixDisplay(mat,['Loss','Win'])
@@ -55,8 +54,12 @@ mod.coef_
 mod.intercept_
 mod.classes_
 
-
 pred = mod.predict(X)
 mat = metrics.confusion_matrix(Y,pred)
 cm = metrics.ConfusionMatrixDisplay(mat,['Loss','Win'])
 cm.plot()
+
+mod.coef_
+labels = ['tatum-points','tatum-assists','brown-points','brown-assists']
+for i in range(len(mod.coef_[0])):
+    print(f'Each {labels[i]} is associated with a change in odds of a win by {exp(mod.coef_[0][i])}')
