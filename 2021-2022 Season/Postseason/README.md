@@ -11,5 +11,5 @@ this folder will house postseason performance data & analysis of the boston celt
 #### Round 2
 - vs Milkwaukee Bucks
 - Higher Seed: BOS
-- Result: 1-2
-- Form: LWL__
+- Result: 2-2
+- Form: LWLW__
