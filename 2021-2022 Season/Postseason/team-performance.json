@@ -1,54 +1,75 @@
-{"games": [
-              {"opp": "bkn",
-               "game": 1,
-               "for": 115,
-               "ag": 114,
-               "ha": "h"},
-              {"opp": "bkn",
-               "game": 2,
-               "for": 114,
-               "ag": 107,
-               "ha": "h"},
-              {"opp": "bkn",
-               "game": 3,
-               "for": 109,
-               "ag": 103,
-               "ha": "a"},
-              {"opp": "bkn",
-               "game": 4,
-               "for": 116,
-               "ag": 112,
-               "ha": "a"},
-              {"opp": "mil",
-               "game": 1,
-               "for": 89,
-               "ag": 101,
-               "ha": "h"},
-              {"opp": "mil",
-               "game": 2,
-               "for": 109,
-               "ag": 86,
-               "ha": "h"},
-              {"opp": "mil",
-               "game": 3,
-               "for": 101,
-               "ag": 103,
-               "ha": "a"},
-              {"opp": "mil",
-               "game": 4,
-               "for": 116,
-               "ag": 108,
-               "ha": "a"},
-              {"opp": "mil",
-               "game": 5,
-               "for": 107,
-               "ag": 110,
-               "ha": "h"},
-              {"opp": "mil",
-               "game": 6,
-               "for": ,
-               "ag": ,
-               "ha": "a"}
+{
+  "games": [
+              {
+                "opp": "bkn",
+                "game": 1,
+                "for": 115,
+                "ag": 114,
+                "ha": "h"
+              },
+              {
+                "opp": "bkn",
+                "game": 2,
+                "for": 114,
+                "ag": 107,
+                "ha": "h"
+              },
+              {
+                "opp": "bkn",
+                "game": 3,
+                "for": 109,
+                "ag": 103,
+                "ha": "a"
+              },
+              {
+                "opp": "bkn",
+                "game": 4,
+                "for": 116,
+                "ag": 112,
+                "ha": "a"
+              },
+              {
+                "opp": "mil",
+                "game": 1,
+                "for": 89,
+                "ag": 101,
+                "ha": "h"
+              },
+              {
+                "opp": "mil",
+                "game": 2,
+                "for": 109,
+                "ag": 86,
+                "ha": "h"
+              },
+              {
+                "opp": "mil",
+                "game": 3,
+                "for": 101,
+                "ag": 103,
+                "ha": "a"
+              },
+              {
+                "opp": "mil",
+                "game": 4,
+                "for": 116,
+                "ag": 108,
+                "ha": "a"
+              },
+              {
+                "opp": "mil",
+                "game": 5,
+                "for": 107,
+                "ag": 110,
+                "ha": "h"
+              },
+              {
+                "opp": "mil",
+                "game": 6,
+                "for": ,
+                "ag": ,
+                "ha": "a"
+              }
            ]
 }
    
