@@ -66,9 +66,16 @@
               {
                 "opp": "mil",
                 "game": 6,
+                "for": 108,
+                "ag": 95,
+                "ha": "a"
+              },
+              {
+                "opp": "mil",
+                "game": 7,
                 "for": ,
                 "ag": ,
-                "ha": "a"
+                "ha": "h"
               }
            ]
 }
