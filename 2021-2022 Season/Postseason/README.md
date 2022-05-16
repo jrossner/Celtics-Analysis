@@ -11,5 +11,11 @@ this folder will house postseason performance data & analysis of the boston celt
 #### Round 2
 - vs Milkwaukee Bucks
 - Higher Seed: BOS
-- Result: 3-3
-- Form: LWLWLW_
+- Result: 4-3
+- Form: LWLWLWW
+
+#### Round 3 (ECF)
+- vs Miami Heat
+- Higher Seed: MIA
+- Result: 0-0
+- Form: ____
