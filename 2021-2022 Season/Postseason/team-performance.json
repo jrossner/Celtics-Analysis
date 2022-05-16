@@ -73,6 +73,34 @@
               {
                 "opp": "mil",
                 "game": 7,
+                "for": 109,
+                "ag": 81,
+                "ha": "h"
+              },
+              {
+                "opp": "mia",
+                "game": 1,
+                "for": ,
+                "ag": ,
+                "ha": "a"
+              },
+              {
+                "opp": "mia",
+                "game": 2,
+                "for": ,
+                "ag": ,
+                "ha": "a"
+              },
+              {
+                "opp": "mia",
+                "game": 3,
+                "for": ,
+                "ag": ,
+                "ha": "h"
+              },
+              {
+                "opp": "mia",
+                "game": 4,
                 "for": ,
                 "ag": ,
                 "ha": "h"
