@@ -1,13 +1,13 @@
 # 2021-2022 Boston Celtics Season
 ----------------------------------
 #### Season Result: TBD
-#### Regular Season Record: 34-26
-#### Playoff Seed: TBD
+#### Regular Season Record: 51-31
+#### Playoff Seed: 2
 #### All-Stars: Jayson Tatum - _starter_
 #### All-NBA: 
 ----------------------------------
 #### Awards:
-  - 
+  - DPOY: Marcus Smart
 ----------------------------------
 #### Trades:
   _Player Additions :: Player Subtractions_ (_Date_)
