@@ -17,5 +17,5 @@ this folder will house postseason performance data & analysis of the boston celt
 #### Round 3 (ECF)
 - vs Miami Heat
 - Higher Seed: MIA
-- Result: 2-2
-- Form: LWLW__
+- Result: 3-2
+- Form: LWLWW_
