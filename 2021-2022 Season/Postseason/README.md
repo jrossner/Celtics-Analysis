@@ -17,5 +17,11 @@ this folder will house postseason performance data & analysis of the boston celt
 #### Round 3 (ECF)
 - vs Miami Heat
 - Higher Seed: MIA
-- Result: 3-2
-- Form: LWLWW_
+- Result: 4-3
+- Form: LWLWWLW
+
+#### Round 4 (Finals)
+- vs Golden State Warriors
+- Better Record: GSW
+- Result: 0-0
+- Form: ____
