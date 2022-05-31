@@ -115,6 +115,41 @@
               {
                 "opp": "mia",
                 "game": 6,
+                "for": 103,
+                "ag": 111,
+                "ha": "h"
+              },
+              {
+                "opp": "mia",
+                "game": 7,
+                "for": 100,
+                "ag": 96,
+                "ha": "a"
+              },
+              {
+                "opp": "gsw",
+                "game": 1,
+                "for": ,
+                "ag": ,
+                "ha": "a"
+              },
+              {
+                "opp": "gsw",
+                "game": 2,
+                "for": ,
+                "ag": ,
+                "ha": "a"
+              },
+              {
+                "opp": "gsw",
+                "game": 3,
+                "for": ,
+                "ag": ,
+                "ha": "h"
+              },
+              {
+                "opp": "gsw",
+                "game": 4,
                 "for": ,
                 "ag": ,
                 "ha": "h"
