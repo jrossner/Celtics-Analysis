@@ -23,5 +23,5 @@ this folder will house postseason performance data & analysis of the boston celt
 #### Round 4 (Finals)
 - vs Golden State Warriors
 - Better Record: GSW
-- Result: 1-1
-- Form: WL___
+- Result: 2-1
+- Form: WLW__
