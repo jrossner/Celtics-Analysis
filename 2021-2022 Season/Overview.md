@@ -1,6 +1,6 @@
 # 2021-2022 Boston Celtics Season
 ----------------------------------
-#### Season Result: TBD
+#### Season Result: Lost Finals vs Golden State Warriors
 #### Regular Season Record: 51-31
 #### Playoff Seed: 2
 ----------------------------------
