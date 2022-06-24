@@ -7,5 +7,7 @@
 #### Accolades:
 ----------------------------------
 #### Offseason Transactions:
+### Draft: 
+- Pick #53 - JD Davidson (PG, Alabama)
 ----------------------------------
 #### Trades:
