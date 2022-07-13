@@ -8,12 +8,15 @@
 ----------------------------------
 #### Offseason Transactions:
 ##### Draft: 
-- Pick #53 - JD Davidson (PG, Alabama)
+- Pick #53 - J.D. Davison (PG, Alabama)
 ----------------------------------
 #### Trades:
   _Player Additions :: Player Subtractions_ (_Date_)
   - Malcolm Brogdon :: Daniel Theis &  Aaron Nesmith & Nik Stauskas & Malik Fitts & Juwan Morgan (July 1, 2022)
 ----------------------------------
 #### Signings:
-  - Danilo Gallinari (TBD)
+  - Danilo Gallinari
+  - Luke Kornet (re-sign)
+  - Sam Hauser (re-sign)
+  - J.D. Davison (2-way)
 ----------------------------------
