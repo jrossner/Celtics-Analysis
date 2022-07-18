@@ -19,4 +19,5 @@
   - Luke Kornet (re-sign)
   - Sam Hauser (re-sign)
   - J.D. Davison (2-way)
+  - Mfiondu Kabengele (2-way)
 ----------------------------------
